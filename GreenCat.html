@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Green Cat
+        </title>
+        <!--stylesheet-->
+        <link rel="stylesheet" type="text/css" href="css/Style.css" />
+        <!--fav-icon-->
+        <link rel="shortcut icon" href="Kartinki/icon1.png"/>
+        <!--using-FontAwesome-For-Icons-->
+        <script src="https://kit.fontawesome.com/4f007a4000.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--navigation-->
+        <nav>
+            <!--social-link and phone number-->
+            <div class="social-call">
+                <!--social-links-->
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-vk fa-lg" style="color: #74C0FC;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #c337be;"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube fa-spin fa-lg" style="color: #f31212;"></i></a>
+                </div>
+                <!--phone-number-->
+                <div class="phone">
+                    <span>Телефон: +123456789</span>
+                </div>
+            </div>
+            <!--menu-bar-->
+            <div class="navigation">
+                <!--logo-->
+                <a href="#" class="logo">
+                    <img src="Kartinki/logo.png"/>
+                </a>
+                <!--menu-->
+                <ul class="menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Игрушки</a>
+                        <!--sale-lable-->
+                        <span class="sale-lable">Распродажа</span>
+                    </li>
+                    <li><a href="#">Питание</a></li>
+                    <li><a href="#">Одежда</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+                <!--right-menu-->
+                <div class="right-menu">
+                    <!--serch-->
+                    <a href="#" class="search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <!--user-->
+                    <a href="#">
+                        <i class="far fa-user"></i>
+                    </a>
+                    <!--cart-icon-->
+                    <a href="#">
+                        <i class="fas fa-shopping-cart">
+                        <!--number-of-product-in-cart-->
+                        <span class="num-cart-product">0</span>
+                    </i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--search-bar-------------------------------------------------------->
+        <div class="search-bar">
+            <!--search-input-->
+            <div class="search-input">
+                <!--input-->
+                <input type="text" placeholder="Поиск"/>
+                <!--cancel-btn-->
+                <a href="#" class="search-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+        <!--login-and-sign-up-form-->
+        <div class="form">
+            <!--login-->
+            <div class="login-form">
+                <!--heading-->
+                <strong>Log In</strong>
+                <!--inputs-->
+                <form>
+                    <input type="email" placeholder="Example@gmail.com" name="email">
+                    <input type="password" placeholder="Password" name="password">
+                    <!--submit-btn-->
+                    <input type="submit" value="Log In"> 
+                    /*28 минута!!!*/
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!--jQuery-->
+        <script src="js/JQuery.js"></script>
+        <!--script-->
+        <script type="text/javascript">
+            /*---------For Search bar---------*/
+            $(document).on('click','.search',function(){
+                $('.search-bar').addClass('search-bar-active')
+            })
+
+            $(document).on('click','.search-cancel',function(){
+                $('.search-bar').removeClass('search-bar-active')
+            })
+        </script>
+    </body>
+</html>
